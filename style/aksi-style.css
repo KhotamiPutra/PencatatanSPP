@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Quicksand";
+  display: flex;
+}
+.group{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+form{
+  margin: 20px;
+  width: 50%;
+}
+
+select,
+input{
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid gray;
+  width: 100%;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.button input[type="submit"] {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  width: 100px;
+}
+
+.button input[name="edit"] {
+  background-color: green;
+}
+
+.button input[name="hapus"] {
+  background-color: red;
+}
+

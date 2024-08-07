@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+body {
+  font-family: "Quicksand", Courier, monospace;
+}
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin-top: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+table,
+th,
+td {
+  border: 1px solid rgb(187, 187, 187);
+}
+
+th,
+td {
+  text-align: center;
+  padding: 8px;
+}
+
+th {
+  background-color: #3d8dbe;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+a img {
+  width: 20px;
+  filter: invert(100%);
+}
+
+.edit{
+    background-color: green;
+    padding: 10px 5px 5px 6px;
+    border-radius: 5px;
+}
+.hapus{
+    background-color: red;
+    padding: 10px 5px 5px 6px;
+    border-radius: 5px;
+}
+
+.sidebar{
+    width: 250px;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    overflow-y: auto;
+  }
+  .sidebar .sb-head{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .sb-head img{
+    width: 30%;
+  }
+  .sidebar ul{
+    display: grid;
+    gap: 1em;
+    padding: 10px;
+  }
+  .sidebar ul a{
+    list-style: none;
+    text-decoration: none;
+    background-color: rgb(107, 107, 107);
+    color: white;
+    border-radius: 5px;
+    transition: .3s;
+  }
+  .sidebar ul a:hover{
+    box-shadow: 0px 0px 20px 0px white;
+    transition: .3s;
+  }
+  .sidebar ul a li{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    padding: 5px 10px 5px 10px;
+  }
+  .sidebar ul a li img{
+    width: 15%;
+    filter: invert(100%);
+  }
+  
+  .sidebar hr{
+    width: 200px;
+  }
+
+  main{
+    margin-left: 250px;
+    padding: 20px;
+  }
+
+  button[type="submit"]{
+    background-color: #3D8DBE;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+  }
+

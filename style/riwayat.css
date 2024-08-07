@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.navigation{
+    background-color: #3D8DBE;
+    padding: 10px;
+}
+.navigation ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+.navigation ul img{
+  width: 30px;
+  filter: invert(100%);
+  position: fixed;
+  top: 20px;
+  left: 20px;
+}
+.navigation ul img:hover{
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+.navigation ul li a {
+    text-decoration: none;
+    color: black;
+    transition: border-bottom 0.3s ease-in-out;
+    border-bottom: 0px solid transparent; 
+    color: white;
+}
+
+.navigation ul li a:hover {
+    border-bottom: 1px solid white; 
+}
+
+.container{
+  padding: 10px;
+}  
+table {
+  width: 100%;
+  border-collapse: separate; 
+  border-spacing: 0; 
+  margin-top: 20px;
+  border-radius: 10px; 
+  overflow: hidden;
+  }
+  
+  table, th, td {
+    border: 1px solid #ddd;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  thead {
+    background-color: #3D8DBE;
+    color: white;
+  }
+  
+  tbody tr:hover {
+    background-color: #f0f0f0;
+  }
+
+  .pesan{
+    background-color: green;
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+    width: 15%;
+    position: fixed;
+    right: 10px; 
+    bottom: 10px;
+    animation: slideFromRight 1s ease;
+  }
+  
+  @keyframes slideFromRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+  }
+
+  .cari {
+    width: 50%; 
+    padding: 8px 10px;
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    font-size: 16px; 
+    color: #333; 
+  }
+
+  .cari:focus {
+    border-color: #3D8DBE; 
+    box-shadow: 0 0 8px rgba(61, 141, 190, 0.5);
+    outline: none;
+  }
+  .small-icon {
+    width: 20px;
+    height: 20px;
+    filter: invert(100%);
+  }
+
+  .hapus-btn {
+    background-color: red; 
+    color: white;
+    border: none; 
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cetak-btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cetak-btn:hover {
+  background-color: #45a049;
+}
+a img{
+  width: 20px;
+  filter: invert(100%);
+}
+.edit{
+  background-color: rgb(0, 187, 0);
+  padding: 10px 5px 5px 6px;
+  border-radius: 5px;
+  width: 20px;
+}
